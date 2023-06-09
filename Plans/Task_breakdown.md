@@ -19,7 +19,7 @@
 * A profile avatar which brings the user to the Profile page
 
 #### Workflow diagram
-<img src = "Plans/RehabIt_app_ flow.jpeg">
+<img src = "/RehabIt_app_ flow.jpeg">
 
 ### intended features
 1. Exercise's success/failure is determined via a database

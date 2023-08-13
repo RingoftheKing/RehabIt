@@ -17,7 +17,7 @@ class my_app extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               const Text("Welcome Jonathan!", style: TextStyle(color: Colors.white, fontSize: 30)),

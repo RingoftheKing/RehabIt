@@ -58,56 +58,68 @@ class PosteriorStretchStartExerciseEmptyScreen extends StatelessWidget {
                                               child: Stack(
                                                   alignment: Alignment.center,
                                                   children: [
-                                                    Align(
-                                                        alignment: Alignment
-                                                            .center,
-                                                        child: Container(
-                                                            height:
-                                                                getSize(194),
-                                                            width: getSize(194),
-                                                            margin: getMargin(
-                                                                left: 7),
-                                                            child: Stack(
-                                                                alignment:
-                                                                    Alignment
-                                                                        .topCenter,
-                                                                children: [
-                                                                  Align(
-                                                                    //TODO: progress meter
-                                                                      alignment: Alignment.topCenter,
-                                                                      child: ProgressMeter(
+                                                    Container(
+                                                        height:
+                                                            getSize(220),
+                                                        width: getSize(220),
+                                                        margin: getMargin(
+                                                            left: 7),
+                                                        child: Stack(
+                                                            // TODO: initially Stack
+                                                          alignment: Alignment.center,
+                                                            children: [
+                                                                      Positioned(
+                                                                        top: 10,
+                                                                        child: Align(
+                                                                            alignment: Alignment.topCenter,
+                                                                            child: Padding(
+                                                                                padding: getPadding(left: 82, top: 50, right: 82),
+                                                                                child: Text("100",
+                                                                                    overflow: TextOverflow.ellipsis,
+                                                                                    textAlign: TextAlign.left,
+                                                                                    style: theme.textTheme.displayMedium
+                                                                                )
+                                                                            )
+                                                                        ),
+                                                                      ),
+                                                                      Positioned(
+                                                                        top: -50,
+                                                                        left: -20,
+                                                                        child: ProgressMeter(
                                                                           startAngle: 180,
                                                                           endAngle: 0,
                                                                           invertFill: false,
                                                                           backgroundColor: const Color.fromARGB(30, 0, 169, 180),
-                                                                          fillColor: Colors.blue)
-                                                                  ),
-                                                                  Align(
-                                                                    //TODO: strain meter
-                                                                      alignment: Alignment.bottomCenter,
-                                                                      child: ProgressMeter(startAngle: 360,
+                                                                          fillColor: Colors.blue),
+                                                                      ),
+                                                                //TODO: strain meter, text does not appear
+                                                                      Positioned(
+                                                                        bottom: -70,
+                                                                        right: -5,
+                                                                        child: ProgressMeter(startAngle: 360,
                                                                           endAngle: 180,
                                                                           invertFill: true,
                                                                           backgroundColor: const Color.fromARGB(30, 0, 169, 180),
-                                                                          fillColor: Colors.orange)
-                                                                  ),
-                                                                  Align(
-                                                                      alignment:
-                                                                          Alignment
-                                                                              .topCenter,
-                                                                      child: Padding(
-                                                                          padding: getPadding(left: 82, top: 50, right: 82),
-                                                                          child: Column(mainAxisSize: MainAxisSize.min, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                            Text("0",
-                                                                                overflow: TextOverflow.ellipsis,
-                                                                                textAlign: TextAlign.left,
-                                                                                style: theme.textTheme.displayMedium),
-                                                                            Text("0",
-                                                                                overflow: TextOverflow.ellipsis,
-                                                                                textAlign: TextAlign.left,
-                                                                                style: theme.textTheme.headlineLarge)
-                                                                          ])))
-                                                                ]))),
+                                                                          fillColor: Colors.orange),
+                                                                      ),
+                                                                      Positioned(
+                                                                        bottom: 40,
+                                                                        right: -28,
+                                                                        child: Align(
+                                                                            alignment: Alignment.topCenter,
+                                                                            child: Padding(
+                                                                              padding: getPadding(left: 82, top: 10, right: 82),
+                                                                              child: Text("0%",
+                                                                                  overflow: TextOverflow.ellipsis,
+                                                                                  textAlign: TextAlign.left,
+                                                                                  style: theme.textTheme.bodyMedium,
+                                                                              )
+                                                                            )
+                                                                        ),
+                                                                      )
+                                                                    ],
+                                                                  )
+                                                              ),
                                                     CustomImageView(
                                                         svgPath: ImageConstant
                                                             .imgNotostar,

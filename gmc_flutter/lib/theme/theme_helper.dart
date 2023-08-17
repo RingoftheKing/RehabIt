@@ -140,6 +140,12 @@ class ThemeHelper {
           fontFamily: 'Arimo',
           fontWeight: FontWeight.w700,
         ),
+        bodyMedium: TextStyle(color: appTheme.orangeA700,
+          fontSize: getFontSize(
+            50,
+          ),
+          fontFamily: 'Arimo Hebrew Subset',
+          fontWeight: FontWeight.w700,)
       ),
       visualDensity: VisualDensity.standard,
     );

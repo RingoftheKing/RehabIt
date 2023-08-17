@@ -52,10 +52,10 @@ class _Progress extends State<ProgressMeter> {
                   endAngle: widget.endAngle,
                   minimum: 0,
                   maximum: 100,
-                  radiusFactor: 1,
+                  radiusFactor: 0.8,
                   canScaleToFit: true,
                   axisLineStyle: AxisLineStyle(
-                  thickness: 0.25,
+                  thickness: 0.23,
                   color: widget.backgroundColor, //this is the background
                   thicknessUnit: GaugeSizeUnit.factor,
                   cornerStyle: CornerStyle.startCurve,
